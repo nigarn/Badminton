@@ -1,0 +1,40 @@
+@use "../colors.scss" as c;
+.category {
+  width: 100%;
+
+  .button {
+    padding: 0;
+    margin-right: 3%;
+    text-transform: capitalize;
+    font-family: "mulish";
+    color: black;
+  }
+  button {
+    text-transform: capitalize;
+  }
+  span {
+    margin-right: 3%;
+  }
+}
+.display-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.display-arrow {
+  display: flex;
+  align-items: center;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.display-img {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+  img {
+    width: 100%;
+  }
+}

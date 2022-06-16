@@ -1,0 +1,41 @@
+@use "assets/styles/colors.scss" as c;
+@import "@fontsource/mulish";
+html,
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "mulish";
+}
+html,
+body {
+  height: 100vh;
+}
+body {
+  background-color: c.$background-color;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 87px;
+}
+.container-itm {
+  width: 78%;
+  //height: 100%;
+  right: 0;
+  position: absolute;
+  z-index: 0;
+  transition: 500ms;
+  padding: 20px 15px 20px 0;
+}
+.change-width {
+  width: 90%;
+  transition: 500ms;
+  padding-left: 50px;
+}
+a{
+  color: black;
+}

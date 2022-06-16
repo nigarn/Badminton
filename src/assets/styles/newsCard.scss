@@ -1,0 +1,30 @@
+@use "colors.scss" as c;
+.news-card {
+
+  img {
+    width: 100%;
+  }
+  &:hover {
+    border: 1px solid black;
+  }
+}
+.news-definition {
+  width: 170px;
+  height: 135px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0 20px;
+
+  h5 {
+    font-size: 13px;
+    color: c.$title-color;
+  }
+  p {
+    font-size: 11px;
+    font-weight: 600;
+  }
+  .news-date {
+    color: c.$title-color;
+  }
+}

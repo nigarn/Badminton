@@ -1,0 +1,16 @@
+@use "colors.scss" as c;
+.slider {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  .slider-title {
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    color: c.$secondary-color;
+    width: 500px;
+    h2{
+        margin-bottom: 5px;
+    }
+  }
+}

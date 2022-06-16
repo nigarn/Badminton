@@ -1,0 +1,66 @@
+@use "colors.scss" as c;
+//@import "assets/personCard-icons/bg-img.svg";
+.about {
+  font-size: 14px;
+
+  width: 100%;
+}
+.about-container {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 5%;
+  position: relative;
+  overflow: auto;
+  height: 850px;
+}
+.about-table {
+  margin-top: 5%;
+  width: 100%;
+  tr {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1%;
+    text-align: left;
+  }
+  th {
+    font-size: 14px;
+    color: c.$table-th;
+    letter-spacing: 1px;
+    font-weight: 100;
+  }
+  td {
+    font-size: 16px;
+    color: black;
+    letter-spacing: 1px;
+    font-weight: 600;
+  }
+}
+
+.personal-up {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 40px;
+  position: relative;
+}
+.personal-desc {
+  width: 150px;
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.personal-img {
+  width: 20%;
+  overflow: hidden;
+  background-color: gray;
+  border-radius: 15px;
+  margin-right: 20px;
+  height: 200px;
+  img {
+    width: 100%;
+  }
+}
+

@@ -1,0 +1,64 @@
+@use "colors.scss" as c;
+@import "@fontsource/mulish";
+.person-card {
+  width: 230px;
+  height: 225px;
+  background-color: c.$secondary-color;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  font-family: "mulish";
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-bottom: 15px;
+  &__up {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+   // margin-top: 15px;
+
+    .person-title {
+      font-weight: 600;
+      font-size: 16px;
+      margin-top: 15px;
+    }
+    .person-definition {
+      font-size: 12px;
+      color: c.$title-color;
+      margin-top: 5px;
+    }
+  }
+  &__info {
+    width: 100px;
+  }
+  &__down {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    
+  }
+}
+.status {
+  background-color: c.$status;
+  padding: 5px 15px;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 12px;
+}
+.rating {
+  font-size: 10px;
+  color: c.$title;
+  border: 1px solid c.$title;
+  border-radius: 6px;
+  padding: 5px 10px;
+}
+.person-img {
+  border-radius: 6px;
+  height: 90px;
+  overflow: hidden;
+  img {
+    width: 100%;
+  }
+}

@@ -1,0 +1,71 @@
+@use "colors.scss" as c;
+.card {
+  width: 265px;
+  height: 320px;
+  background-color: c.$secondary-color;
+  border-radius: 20px;
+  border: 1px solid transparent;
+  margin-bottom: 30px;
+  img {
+    width: 100%;
+  }
+  &:hover {
+    border: 1px solid black;
+  }
+}
+.card-line {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  a {
+    text-decoration: none;
+  }
+}
+.edit-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.insteadOfBorder {
+  width: 80%;
+  border: 1px solid #d6d6d6;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.personal-rate {
+  width: 65%;
+}
+.halls-btn {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  button {
+    background-color: white;
+    border: 1px solid c.$table-th;
+    padding: 5px 5px;
+    margin-right: 10px;
+    width: 80px;
+    font-size: 12px;
+    border-radius: 3px;
+    position: relative;
+    &:hover {
+      cursor: pointer;
+    }
+    img{
+      position: absolute;
+    left: 2px;
+    top: 7px;
+}
+    }
+  }
+

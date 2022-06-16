@@ -1,0 +1,62 @@
+@use "colors.scss" as c;
+.navbar {
+  background-color: c.$secondary-color;
+  min-height: 100%;
+  position: fixed;
+
+  ul {
+    padding: 15px 25px;
+  }
+  li {
+    margin: 0 auto 25px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  p {
+    margin-left: 15px;
+    // transition-duration: 5s;
+    opacity: 0;
+  }
+  img {
+    transition: 1s;
+  }
+}
+.navbar-icons {
+  transition-duration: 500ms;
+  transition-property: left;
+  width: 8%;
+  //padding: 0 1.5rem;
+  li {
+    justify-content: center;
+  }
+  p {
+    opacity: 1;
+  }
+}
+.navbar-menu {
+  width: 18%;
+  transition-duration: 500ms;
+  transition-property: left;
+  //padding: 0 1.5rem;
+  li {
+    width: 90%;
+    justify-content: flex-start;
+  }
+  p {
+    opacity: 1;
+  }
+}
+.toggle-icon {
+  transition-duration: 500ms;
+  transform: rotate(180deg);
+}
+.collapse {
+  &:hover {
+    cursor: pointer;
+  }
+}
